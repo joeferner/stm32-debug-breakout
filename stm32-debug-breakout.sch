@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L kicad-library:ST_PROGRAM_DEBUG J3
+U 1 1 61759719
+P 4200 3200
+F 0 "J3" H 4250 3850 60  0000 L CNN
+F 1 "ST_PROGRAM_DEBUG" H 4250 2550 60  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x04_P2.54mm_Vertical" H 3900 3000 60  0001 C CNN
+F 3 "" H 3900 3000 60  0000 C CNN
+	1    4200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 61759DF4
+P 3900 2600
+F 0 "#PWR01" H 3900 2450 50  0001 C CNN
+F 1 "VCC" H 3915 2773 50  0000 C CNN
+F 2 "" H 3900 2600 50  0001 C CNN
+F 3 "" H 3900 2600 50  0001 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6175A2AB
+P 3900 3800
+F 0 "#PWR02" H 3900 3550 50  0001 C CNN
+F 1 "GND" H 3905 3627 50  0000 C CNN
+F 2 "" H 3900 3800 50  0001 C CNN
+F 3 "" H 3900 3800 50  0001 C CNN
+	1    3900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3700 3900 3700
+Wire Wire Line
+	3900 3700 3900 3800
+Wire Wire Line
+	4000 2700 3900 2700
+Wire Wire Line
+	3900 2700 3900 2600
+Text Label 3600 2900 0    50   ~ 0
+SWCLK
+Text Label 3600 3000 0    50   ~ 0
+SWDIO
+Text Label 3600 3100 0    50   ~ 0
+NRST
+Text Label 3600 3400 0    50   ~ 0
+TX
+Text Label 3600 3500 0    50   ~ 0
+RX
+Wire Wire Line
+	3600 2900 4000 2900
+Wire Wire Line
+	3600 3000 4000 3000
+Wire Wire Line
+	3600 3100 4000 3100
+Wire Wire Line
+	4000 3400 3600 3400
+Wire Wire Line
+	4000 3500 3600 3500
+$Comp
+L power:GND #PWR03
+U 1 1 6175D8CC
+P 4600 5150
+F 0 "#PWR03" H 4600 4900 50  0001 C CNN
+F 1 "GND" H 4605 4977 50  0000 C CNN
+F 2 "" H 4600 5150 50  0001 C CNN
+F 3 "" H 4600 5150 50  0001 C CNN
+	1    4600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5050 4600 5050
+Wire Wire Line
+	4600 5050 4600 5150
+NoConn ~ 4500 4950
+NoConn ~ 4500 4850
+NoConn ~ 4500 4550
+Text Label 4750 4650 2    50   ~ 0
+TX
+Text Label 4750 4750 2    50   ~ 0
+RX
+Wire Wire Line
+	4750 4650 4500 4650
+Wire Wire Line
+	4750 4750 4500 4750
+$Comp
+L kicad-library:FTDI J1
+U 1 1 6175FEDD
+P 4300 4650
+F 0 "J1" H 4200 4900 50  0000 C CNN
+F 1 "FTDI" H 4200 4100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 4300 4650 50  0001 C CNN
+F 3 "" H 4300 4650 50  0001 C CNN
+	1    4300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L kicad-library:STLINK J2
+U 1 1 617629B2
+P 7000 3100
+F 0 "J2" H 6500 3350 50  0000 C CNN
+F 1 "STLINK" H 6600 950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 7000 3100 50  0001 C CNN
+F 3 "" H 7000 3100 50  0001 C CNN
+	1    7000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 617638F3
+P 7200 5200
+F 0 "#PWR05" H 7200 4950 50  0001 C CNN
+F 1 "GND" H 7205 5027 50  0000 C CNN
+F 2 "" H 7200 5200 50  0001 C CNN
+F 3 "" H 7200 5200 50  0001 C CNN
+	1    7200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4300 7200 4300
+Wire Wire Line
+	7200 4300 7200 4400
+Wire Wire Line
+	7100 4400 7200 4400
+Connection ~ 7200 4400
+Wire Wire Line
+	7200 4400 7200 4500
+Wire Wire Line
+	7100 4500 7200 4500
+Connection ~ 7200 4500
+Wire Wire Line
+	7200 4500 7200 4600
+Wire Wire Line
+	7100 4600 7200 4600
+Connection ~ 7200 4600
+Wire Wire Line
+	7200 4600 7200 4700
+Wire Wire Line
+	7100 4700 7200 4700
+Connection ~ 7200 4700
+Wire Wire Line
+	7200 4700 7200 4800
+Wire Wire Line
+	7100 4800 7200 4800
+Connection ~ 7200 4800
+Wire Wire Line
+	7200 4800 7200 4900
+Wire Wire Line
+	7100 4900 7200 4900
+Connection ~ 7200 4900
+Wire Wire Line
+	7200 4900 7200 5000
+Wire Wire Line
+	7100 5000 7200 5000
+Connection ~ 7200 5000
+Wire Wire Line
+	7200 5000 7200 5100
+Wire Wire Line
+	7100 5100 7200 5100
+Connection ~ 7200 5100
+Wire Wire Line
+	7200 5100 7200 5200
+NoConn ~ 7100 4000
+NoConn ~ 7100 4100
+$Comp
+L power:VCC #PWR04
+U 1 1 617676B7
+P 7200 2900
+F 0 "#PWR04" H 7200 2750 50  0001 C CNN
+F 1 "VCC" H 7215 3073 50  0000 C CNN
+F 2 "" H 7200 2900 50  0001 C CNN
+F 3 "" H 7200 2900 50  0001 C CNN
+	1    7200 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3100 7200 3100
+Wire Wire Line
+	7200 3100 7200 3000
+Wire Wire Line
+	7100 3000 7200 3000
+Connection ~ 7200 3000
+Wire Wire Line
+	7200 3000 7200 2900
+NoConn ~ 7100 3300
+NoConn ~ 7100 3400
+Text Label 7400 3500 2    50   ~ 0
+SWDIO
+Text Label 7400 3600 2    50   ~ 0
+SWCLK
+Wire Wire Line
+	7400 3500 7100 3500
+Wire Wire Line
+	7400 3600 7100 3600
+Text Label 3600 3200 0    50   ~ 0
+SWO
+Wire Wire Line
+	4000 3200 3600 3200
+Text Label 7400 3800 2    50   ~ 0
+SWO
+Wire Wire Line
+	7400 3800 7100 3800
+Text Label 7400 3900 2    50   ~ 0
+NRST
+Wire Wire Line
+	7400 3900 7100 3900
+NoConn ~ 7100 3700
+$Comp
+L Switch:SW_MEC_5E SW1
+U 1 1 6175F9B7
+P 2350 4300
+F 0 "SW1" H 2350 4685 50  0000 C CNN
+F 1 "SW_MEC_5E" H 2350 4594 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 2350 4600 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2350 4600 50  0001 C CNN
+	1    2350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 6176102E
+P 2700 4550
+F 0 "R1" H 2759 4596 50  0000 L CNN
+F 1 "0R" H 2759 4505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2700 4550 50  0001 C CNN
+F 3 "~" H 2700 4550 50  0001 C CNN
+	1    2700 4550
+	1    0    0    -1  
+$EndComp
+Text Label 1750 4200 0    50   ~ 0
+NRST
+Wire Wire Line
+	2150 4300 2050 4300
+Wire Wire Line
+	2050 4300 2050 4200
+Wire Wire Line
+	2050 4200 2150 4200
+Wire Wire Line
+	2050 4200 1750 4200
+Connection ~ 2050 4200
+Wire Wire Line
+	2550 4200 2700 4200
+Wire Wire Line
+	2700 4200 2700 4300
+Wire Wire Line
+	2550 4300 2700 4300
+Connection ~ 2700 4300
+Wire Wire Line
+	2700 4300 2700 4450
+$Comp
+L power:GND #PWR06
+U 1 1 617655F7
+P 2700 4750
+F 0 "#PWR06" H 2700 4500 50  0001 C CNN
+F 1 "GND" H 2705 4577 50  0000 C CNN
+F 2 "" H 2700 4750 50  0001 C CNN
+F 3 "" H 2700 4750 50  0001 C CNN
+	1    2700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4650 2700 4750
+$EndSCHEMATC
