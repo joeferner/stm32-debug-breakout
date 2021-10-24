@@ -92,9 +92,9 @@ Wire Wire Line
 NoConn ~ 4500 4950
 NoConn ~ 4500 4850
 NoConn ~ 4500 4550
-Text Label 4750 4650 2    50   ~ 0
-TX
 Text Label 4750 4750 2    50   ~ 0
+TX
+Text Label 4750 4650 2    50   ~ 0
 RX
 Wire Wire Line
 	4750 4650 4500 4650
